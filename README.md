@@ -4,6 +4,14 @@ I'm building the NUML RAG System to make university information easier to find. 
 
 This project is part of my journey as an AI Engineer, where I'm learning to build practical AI applications rather than just experimenting with language models.
 
+Application Preview
+
+![NUML RAG System UI](docs/images/numl-rag-ui.png)
+
+Example Answer with Sources
+
+![Answer with source references](docs/images/answer-with-sources.png)
+
 ## Why I Built This
 
 University documents contain useful information about admissions, examinations, scholarships, student policies, and other academic matters. Finding the exact information can take time.
@@ -21,6 +29,12 @@ I wanted to build a system that helps users search these documents through a sim
 - Display source document names and page numbers.
 - Provide a React frontend connected to a FastAPI backend.
 - Support OCR-based extraction for scanned PDFs when Tesseract OCR is configured.
+
+## Architecture
+
+The system follows a basic RAG pipeline: documents are processed and indexed before users ask questions. When a question arrives, the system retrieves relevant content and passes it to the language model to generate an answer.
+
+![Answer with source references](docs/images/rag-architecture.png)
 
 ## Technology Stack
 
